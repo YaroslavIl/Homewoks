@@ -1,0 +1,66 @@
+@import url(reset.css);
+
+.title{
+    color: rgb(35, 175, 30);
+}
+.title .title-blue{
+    color: blue;
+}
+#subtitle-id{
+    color: gray;
+}
+.list-item a{
+    color: tomato;
+}
+
+
+.text-blok > p{
+    color: greenyellow;
+}
+[class*="subtitle"]{
+    color: royalblue;
+}
+span{
+    color: rgb(214, 105, 65);
+}
+.text-blok-population{
+    color: chocolate;
+}
+.subtitle-religion ~ p{
+    color: wheat;
+}
+.subtitle-time-zone + p{
+    color: rgb(230, 144, 15);
+}
+#time-zone-id.text-blok-time-zone{
+    color: rgb(202, 185, 28);
+}
+
+.test-blok ul li{
+    color: red;
+}
+.test-blok ul li + li{
+    color: green;
+}
+
+.test-blok ul li ul li{
+    color: blue;
+}
+.test-blok ul li ul li + li{
+    color: orange;
+}
+.test-blok ul li span {
+    color: #a0f0fc;
+}
+.test-blok ul li ul li ol li + li{
+    color: #5d5d5d;
+}
+.test-blok ul li ul li ol li{
+    color: #4597f7;
+}
+
+.test-blok ul li ul li ol li span{
+    color: #5d5d5d;
+}
+
+
