@@ -1,0 +1,169 @@
+/* Скидання стилів */
+@import url(reset.css);
+
+/* Google Fonts (Plugin) */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+
+/* завантажені шрифти */
+@import url(../css/fonts.css);
+
+.wrap {
+    background-color: #231F8B;
+    padding-top: 112px;
+    padding-bottom: 112px;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.title,
+.slogan,
+.subtitle {
+    max-width: 765px;
+}
+
+.slogan {
+    color: #5A54F2;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.title {
+    color: #FFF;
+    font-family: "Circular Std", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #FFF;
+    font-family: "Circular Std", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-bottom: 70px;
+}
+
+.card-block {
+    min-height: 360px;
+    font-size: 0;
+}
+
+.card {
+    display: inline-block;
+    max-width: 230px;
+    width: 100%;
+    padding: 35px 40px;
+    background-color: #FFF;
+    font-size: 0;
+    min-height: 230px;
+    vertical-align: top;
+    margin-right: 40px;
+}
+
+.card-title {
+    color: #252B42;
+    font-family: "Circular Std", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.card-subtitle {
+    color: #737373;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.line-decor {
+    width: 50px;
+    height: 2px;
+    background: #E74040;
+}
+
+.card-img,
+.line-decor,
+.card-title {
+    margin-bottom: 20px;
+}
+
+.card-color {
+    background: #5A54F2;
+    color: #FFF;
+}
+
+.card-color * {
+    color: #FFF;
+}
+
+.card-color>.line-decor {
+    background: #FFF;
+}
+
+.card-bottom {
+    vertical-align: bottom;
+    margin-bottom: -72px;
+}
+
+.end-card {
+    margin-right: 0;
+}
+
+
+.test-block {
+    padding: 100px 50px 150px 30px;
+    width: 100%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.test-block>p {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 100px;
+    width: 400px;
+}
+
+.test-text2 {
+    vertical-align: top;
+    color: #737373;
+}
+
+.test-text3 {
+    vertical-align: bottom;
+    color: #E74040;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.test-text1 {
+    overflow-y: scroll;
+    min-height: 50px;
+    max-height: 200px;
+    color: #6ff006;
+}
+
+.test-text4 {
+    height: 100px;
+    background: #0000005e;
+}
+
+.test-text5 {
+    height: 100px;
+    background: #0000005e;
+    overflow: hidden;
+}
