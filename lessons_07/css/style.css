@@ -1,0 +1,357 @@
+/* Скидання стилів */
+@import url(reset.css);
+
+/* Google Fonts (Plugin) */
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap");
+
+/* завантажені шрифти */
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.links {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(6, 83, 6, 0.671);
+    padding: 90px 30px 50px;
+    border-radius: 100% 100% 20px 20px;
+    box-shadow: -30px 10px 20px rgba(0, 0, 0, 0.3),
+        0 25px 30px rgba(0, 0, 0, 0.3);
+}
+
+.links:hover {
+    text-align: center;
+    box-shadow: 30px 10px 20px rgba(116, 206, 14, 0.479),
+        0 25px 30px rgba(116, 206, 14, 0.479);
+}
+
+.links:hover .homework {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: rgba(255, 251, 0, 0.897);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.links:hover .item {
+    font-family: sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.links a:hover {
+    text-decoration: 10px underline red;
+    color: gold;
+}
+
+
+/* ------------------ Business-1 ------------ */
+.business {
+    margin-top: 100px;
+    background-color: #412672;
+    padding: 184px 0 102px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.business-title {
+    color: #FFF;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.21;
+    margin-bottom: 31px;
+}
+
+.business-title span {
+    font-weight: 700;
+}
+
+.card-box {
+    width: 100%;
+}
+
+.card-box>div {
+    margin-right: 19px;
+}
+
+.card-box div:last-child {
+    margin-right: 0;
+}
+
+.card {
+    max-width: 387px;
+    min-height: 476px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #FFF;
+    font-size: 20px;
+    box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+}
+
+.card:hover {
+    background-color: #FFBE48;
+}
+
+.card>* {
+    margin-bottom: 16px;
+}
+
+.card>img {
+    max-width: 347px;
+    max-height: 266px;
+    width: 100%;
+    height: 100%
+}
+
+.card>h3 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.22;
+}
+
+.card>p {
+    color: #4F4F4F;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.26;
+}
+
+.card>a {
+    color: red;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.26;
+}
+
+.card>a:hover {
+    color: green;
+    text-decoration: 2px underline;
+}
+
+.card>*:last-child {
+    margin-bottom: 0px;
+}
+
+/* -----------------task-2------------------- */
+.task2 {
+    padding: 153px 0 139px;
+    background-color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 0;
+}
+
+.task2-block {
+    text-align: start;
+    max-width: 520px;
+}
+
+.task2-block>* {
+    margin-bottom: 20px;
+}
+
+.task2-block h2 {
+    color: #412672;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.20;
+}
+
+.task2-block h2 span {
+    font-weight: 700;
+}
+
+.task2-block p {
+    color: #412672;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.22;
+}
+
+.task2-block>ul {
+    padding-left: 35px;
+}
+
+.task2-block>ul>* {
+    color: #4F4F4F;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2.55;
+    min-height: 30px;
+}
+
+.task2-block>ul>li::before {
+    content: "";
+    background: url("../img/icon.svg") 0 0 no-repeat;
+    background-position: 0 10px;
+    width: 29px;
+    height: 50px;
+    margin-right: 15px;
+    margin-left: -40px;
+    vertical-align: top;
+}
+
+.task2-block>*:last-child {
+    margin-bottom: 0px;
+}
+
+/* ------------------Task-3----------------- */
+
+.game {
+    padding: 100px;
+    background-color: #FFBE48;
+}
+
+.box-game {
+    font-size: 0;
+}
+
+.step {
+    display: inline-block;
+    visibility: hidden;
+    background: url('../img/lapka.png') repeat;
+    background-size: contain;
+}
+
+
+.step-1 {
+    width: 60px;
+    height: 40px;
+    font-size: 25px;
+    background: none;
+    background-color: #c2242473;
+    text-align: center;
+    visibility: visible;
+}
+
+.step-2 {
+    width: 180px;
+    height: 20px;
+}
+
+.step-3 {
+    width: 20px;
+    height: 180px;
+    vertical-align: top;
+}
+
+.step-4 {
+    width: 500px;
+    height: 20px;
+    vertical-align: bottom
+}
+
+.step-5 {
+    width: 20px;
+    height: 180px;
+    vertical-align: bottom;
+}
+
+.step-6 {
+    width: 200px;
+    height: 20px;
+    vertical-align: top;
+}
+
+.step-7 {
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+    background: none;
+    background-color: #b11c1c7a;
+    font-size: 20px;
+    text-align: center;
+}
+
+.step-7:hover {
+    background-color: #b11c1cde;
+}
+
+.step:hover+.step,
+.step:hover {
+    visibility: visible;
+}
+
+/*-------------- task-4----------- */
+
+.task4 {
+    padding: 100px;
+    background-color: #1d20d4b4;
+}
+
+.hover-btn a {
+    border: 2px solid #00000081;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 15px;
+    background-color: #FFBE48;
+    margin-right: 50px;
+    font-size: 25px;
+}
+
+.task4-box {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+}
+.block-inner{
+    background-color: #df3535;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+.hover-btn {
+    margin-bottom: 50px;
+}
+
+.hover-btn a:last-child {
+    margin-right: 0px;
+}
+
+.hover-btn>a:hover:first-child {
+    background-color: #bd1c1c;
+}
+
+.hover-btn>a:hover:nth-child(2) {
+    background-color: #b97b7b;
+}
+
+.hover-btn>a:hover:nth-child(3) {
+    background-color: #a1b97b;
+}
+
+.hover-btn>a:hover:last-child {
+    background-color: #7b9bb9;
+}
+
+/* ---------------------------------- */
+
+.hover-btn *:first-of-type:active {
+    color: #1c6fbd;
+}
+
+.hover-btn a:last-of-type:focus {
+    color: #eba611;
+}
+
+.hover-btn a:visited:nth-of-type(2) {
+    color: #1c6fbd;
+}
+/*  чи могли б тут пояснити бо я зробив методом експерименту і не до кінця зрозумів  чому ми звертаємось до .task4-box а не до <a class="click" href="#some-id">Натисни</a> */
+.task4-box:target .block-inner{
+    visibility: visible;
+}
