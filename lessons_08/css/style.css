@@ -1,0 +1,57 @@
+/* Скидання стилів */
+@import url(reset.css);
+
+/* Google Fonts (Plugin) */
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap");
+
+/* завантажені шрифти */
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+    background-color: goldenrod;
+    padding: 50px 0 50px;
+    font-weight: 900;
+}
+.page{
+    background-color: rgba(0, 128, 0, 0.712);
+}
+.container{
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+
+.list{
+    padding: 50px 0 50px;
+}
+.list>*{
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 25px;
+    color: yellow;
+}
+
+.list>*:hover{
+    color: rgba(243, 247, 5, 0.582);
+}
+.list>:last-child{
+    margin-bottom: 0;
+}
+.list>li>img{
+    max-width: 300px;
+    max-height: 300px;
+    margin-right: 50px;
+}
+.picture-conten{
+    padding-bottom: 50px;
+}
+
+
