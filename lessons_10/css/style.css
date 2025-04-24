@@ -320,13 +320,13 @@
 .menu__item{
     position: fixed;
     top: 0;
-    left: 25%;
+    left: 0;
     z-index: 50;
     background-color: #45a1df;
     border-radius: 0 0 20px 20px;
     text-align: center;
     padding: 10px;
-    width: 1000px;
+    width: 100%;
 }
 .menu__items:not(:last-child){
     margin-right: 50px;
