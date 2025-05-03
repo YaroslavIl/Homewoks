@@ -1,0 +1,549 @@
+/* Скидання стилів */
+@import url(reset.css);
+
+/* Google Fonts (Plugin) */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* завантажені шрифти */
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+
+.car {
+    padding: 50px 0;
+    background-color: #61e05891;
+}
+
+.car__container {
+    padding: 0 20px;
+}
+
+.car__road {
+    width: 20000px;
+    background-color: rgb(60, 57, 57);
+    border-top: 50px dashed #ffffff;
+    border-bottom: 50px dashed #ffffff;
+    height: 1000px;
+    position: relative;
+    animation-name: movement-road;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    left: -17000px;
+}
+
+@keyframes movement-road {
+    0% {
+        left: 0;
+    }
+
+    15% {
+        left: 0;
+    }
+
+    25% {
+        left: -6000px;
+    }
+
+
+    35% {
+        left: -6500px;
+    }
+
+    50% {
+        left: -10000px;
+    }
+
+    100% {
+        left: -17000px;
+    }
+}
+
+.car__marking {
+    display: inline-block;
+    width: 100%;
+    border-top: 100px dashed #ffffff;
+    border-width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.car__body-box {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+    top: 60%;
+    left: 7500px;
+    animation-name: movement;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.car__pit-road {
+    position: absolute;
+    top: 0;
+    left: 7500px;
+}
+
+.car__pit-road-next {
+    position: absolute;
+    bottom: 0;
+    left: 11000px;
+}
+
+.car__pit-road-oher {
+    position: absolute;
+    bottom: 0;
+    left: 16000px;
+}
+
+@keyframes movement {
+    0% {
+        left: -400px;
+    }
+
+    15% {
+        left: 700px;
+    }
+
+
+    25% {
+        left: 6000px;
+        top: 55%;
+    }
+
+
+    35% {
+        left: 7430px;
+        top: 40%;
+    }
+
+    50% {
+        left: 10700px;
+        top: 60%;
+    }
+
+    100% {
+        left: 17700px;
+    }
+}
+
+.car__body {
+    width: 900px;
+    height: 450px;
+    background-color: #0418fa;
+    border-radius: 100% 100% 0 0;
+    position: absolute;
+    top: -20%;
+    transform: translate(-30%, -50%);
+    left: 0;
+    animation-name: accident-car-body;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes accident-car-body {
+    0% {
+        transform-origin: 0 0;
+        transform: rotate(-50deg);
+    }
+
+    50% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        left: -1500%;
+    }
+}
+
+.car__body::after {
+    content: '';
+    width: 250px;
+    height: 250px;
+    background-color: #0418fa;
+    position: absolute;
+    bottom: 0;
+    right: -240px;
+    z-index: 2;
+    border-radius: 0 80% 0 0;
+    animation-name: accident-after;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes accident-after {
+    0% {
+        top: -25%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100% {
+        top: 100%;
+        right: 1500%;
+    }
+}
+
+.car__body::before {
+    content: '';
+    width: 250px;
+    height: 250px;
+    background-color: #0418fa;
+    position: absolute;
+    bottom: 0;
+    left: -240px;
+    z-index: 2;
+    border-radius: 80% 0 0 0;
+    animation-name: accident-before;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes accident-before {
+    0% {
+        top: -25%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100% {
+        top: 100%;
+        left: -1500%;
+    }
+}
+
+.car__windows {
+    width: 150px;
+    height: 50px;
+    background-color: #6cf5faa5;
+    position: absolute;
+    border-radius: 100% 100% 0 0 / 50% 80% 0 0;
+    top: -75%;
+    right: -220%;
+    transform: rotate(45deg);
+    border: 1px solid #6cf5fab1;
+    animation-name: accident-windows;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes accident-windows {
+    0% {
+        top: -25%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100% {
+        top: 100%;
+        right: 1500%;
+    }
+}
+
+.car__windows--other {
+    width: 150px;
+    height: 50px;
+    background-color: #6cf5faa5;
+    position: absolute;
+    border-radius: 100% 100% 0 0 / 50% 80% 0 0;
+    top: -75%;
+    left: -135%;
+    transform: rotate(-45deg);
+    border: 1px solid #6cf5fab1;
+    animation-name: accident-windows-other;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes accident-windows-other {
+    0% {
+        top: -25%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100% {
+        top: 100%;
+        left: -1500%;
+    }
+}
+
+.car__sleepers {
+    background-color: rgb(22, 21, 21);
+    width: 290px;
+    height: 150px;
+    position: absolute;
+    bottom: 15px;
+    left: -100%;
+    padding-top: 30px;
+    border-radius: 120px 120px 0 0;
+    text-align: center;
+    z-index: 5;
+}
+
+.car__sleepers--other {
+    left: 190%;
+}
+
+.car__wheel {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    animation-name: circle;
+    animation-duration: 12s;
+}
+
+.car__wheel--other {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    left: 200%;
+    border-radius: 50%;
+    text-align: center;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(-180deg);
+    }
+
+    50% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(-180deg);
+    }
+}
+
+.car__disk {
+    width: 180px;
+    height: 180px;
+    background-color: #B0C4DE;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 35px;
+}
+
+.car__bolts {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 40px;
+    border: 19px dotted #A9A9A9;
+}
+
+.car__black-line {
+    background-color: black;
+    width: 1400px;
+    height: 40px;
+    position: absolute;
+    bottom: 10px;
+    left: -520px;
+    border-radius: 20px 20px 0 0;
+}
+
+.car__door {
+    width: 210px;
+    height: 300px;
+    position: absolute;
+    top: -100%;
+    right: -110%;
+    z-index: 0;
+    border: 3px solid #000;
+    border-radius: 0 50% 0 0;
+    overflow: clip;
+    animation-name: accident-door;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes accident-door {
+    0% {
+        top: -25%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100% {
+        top: 100%;
+        right: 1500%;
+    }
+}
+
+.car__door::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 150px;
+    background-color: #6cf5faa5;
+}
+
+.car__door::after {
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    top: 59%;
+    left: 5%;
+}
+
+.car__door--other {
+    left: -30%;
+    animation-name: accident-door-oher;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes accident-door-oher {
+    0% {
+        top: -25%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100% {
+        top: 100%;
+        left: -1500%;
+    }
+}
+
+.car__lighthouse {
+    width: 40px;
+    height: 60px;
+    background-color: red;
+    transform: rotate(20deg);
+    position: absolute;
+    bottom: 50%;
+    left: -246%;
+    z-index: 6;
+    border-radius: 80px;
+    box-shadow:
+        0 0 20px 5px rgba(255, 0, 0, 0.8),
+        10px 0 30px 10px rgba(255, 0, 0, 0.5),
+        -5px 5px 15px 2px rgba(255, 0, 0, 0.296);
+    animation-name: accident-lighthouse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes accident-lighthouse {
+    0% {
+        top: -25%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100% {
+        top: 100%;
+        left: -1500%;
+    }
+}
+
+
+.car__lighthouse--other {
+    left: 400%;
+    transform: rotate(-20deg);
+    background-color: yellow;
+    box-shadow:
+        0 0 20px 5px rgba(255, 255, 0, 0.8),
+        -10px 0 30px 10px rgba(255, 255, 0, 0.5),
+        5px 5px 15px 2px rgba(255, 255, 0, 0.3);
+    animation-name: accident-lighthouse-oher;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes accident-lighthouse-oher {
+    0% {
+        top: -25%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100% {
+        top: 100%;
+        left: -1500%;
+    }
+}
+
+.car__title {
+    font-size: 150px;
+    font-weight: 800;
+    position: absolute;
+    color: #000;
+    top: 10%;
+    left: 17500px;
+    visibility: hidden;
+    opacity: 0;
+    animation-name: title;
+    animation-delay: 11s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: 10;
+}
+
+@keyframes title {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
