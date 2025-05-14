@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Lesson14</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <!-- header -->
+
+            </header>
+            <main class="page">
+                <section class="order">
+                    <div class="order__container">
+                        <form class="order__form form" action="#" method="post">
+                            <h1 class="form__title">Billing Information</h1>
+                            <div class="form__info-line">
+                                <div class="form__item-info">
+                                    <label for="name">First name</label>
+                                    <input required id="name" type="text"
+                                        name="form[]" class="form__name"
+                                        placeholder="Your first name">
+                                </div>
+                                <div class="form__item-info">
+                                    <label for="last-name">Last name</label>
+                                    <input required id="last-name" type="text"
+                                        name="form[]" class="form__name"
+                                        placeholder="Your last name">
+                                </div>
+                                <div class="form__item-info">
+                                    <label for="company-name">Company Name
+                                        <span>(optional)</span>
+                                    </label>
+                                    <input required id="company-name"
+                                        type="text" name="form[]"
+                                        class="form__name"
+                                        placeholder="Company name">
+                                </div>
+                            </div>
+                            <div class="form__email-info">
+                                <label for="email">
+                                    Street Address
+                                </label>
+                                <input required id="email" type="email"
+                                    name="form[]" class="form__email"
+                                    placeholder="Email">
+                            </div>
+                            <div class="form__choie">
+                                <div class="form__country">
+                                    <label for="countri">
+                                        Country / Region
+                                    </label>
+                                    <select name="form[]" id="countri">
+                                        <option value="#" selected hidden>Selects</option>
+                                        <option value="#">Значення 1</option>
+                                        <option value="#">Значення 2</option>
+                                        <option value="#">Значення 3</option>
+                                    </select>
+                                </div>
+                                <div class="form__states">
+                                    <label for="states">
+                                        States
+                                    </label>
+                                    <select name="form[]" id="states">
+                                        <option value="#" selected hidden>Selects</option>
+                                        <option value="#">Значення 1</option>
+                                        <option value="#">Значення 2</option>
+                                        <option value="#">Значення 3</option>
+                                    </select>
+                                </div>
+                                <div class="form__number">
+                                    <label for="number">
+                                        Zip Code
+                                    </label>
+                                    <input required id="number" type="number"
+                                        name="form[]" class="form__number"
+                                        placeholder="Zip Code">
+                                </div>
+                            </div>
+                            <div class="form__line-phone">
+                                <div class="form__email">
+                                    <label for="mail">Email</label>
+                                    <input type="email" required id="mail" placeholder="Email Address">
+                                </div>
+                                <div class="form__phone">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" required id="phone" placeholder="Phone number">
+                                </div>
+                            </div>
+                            <div class="form__line-check">
+                                <input type="checkbox" name="form[]" id="checkbox">
+                                <label for="checkbox">
+                                    Ship to a different address
+                                </label>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <p>footer</p>
+                <!-- контент підвалу -->
+            </footer>
+        </div>
+    </body>
+</html>
