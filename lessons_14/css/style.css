@@ -242,6 +242,7 @@ input:not(.form__input-check, .basket__radio):hover {
     width: 100%;
     height: 100px;
     resize: vertical;
+    min-height: 70px;
 }
 
 .form__basket {
