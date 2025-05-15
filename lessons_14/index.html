@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Lesson14</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <!-- header -->
+                    <p>header</p>
+            </header>
+            <main class="page">
+                <section class="order">
+                    <div class="order__container">
+                        <form class="order__form form" action="#" method="post">
+                            <div class="form__inner">
+                                <h2 class="form__title">Billing Information</h2>
+                                <div class="form__info-line">
+                                    <div class="form__item-info">
+                                        <label for="name">First name</label>
+                                        <input required id="name" type="text"
+                                            name="form[]" class="form__name"
+                                            placeholder="Your first name">
+                                    </div>
+                                    <div class="form__item-info">
+                                        <label for="last-name">Last name</label>
+                                        <input required id="last-name" type="text"
+                                            name="form[]" class="form__name"
+                                            placeholder="Your last name">
+                                    </div>
+                                    <div class="form__item-info">
+                                        <label for="company-name">Company Name
+                                            <span>(optional)</span>
+                                        </label>
+                                        <input required id="company-name"
+                                            type="text" name="form[]"
+                                            class="form__name"
+                                            placeholder="Company name">
+                                    </div>
+                                </div>
+                                <div class="form__email-info">
+                                    <label for="email">
+                                        Street Address
+                                    </label>
+                                    <input required id="email" type="email"
+                                        name="form[]" class="form__email"
+                                        placeholder="Email">
+                                </div>
+                                <div class="form__choie">
+                                    <div class="form__country">
+                                        <label for="countri">
+                                            Country / Region
+                                        </label>
+                                        <select name="form[]" id="countri">
+                                            <option value="#" selected hidden>Selects</option>
+                                            <option value="#">Значення 1</option>
+                                            <option value="#">Значення 2</option>
+                                            <option value="#">Значення 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__states">
+                                        <label for="states">
+                                            States
+                                        </label>
+                                        <select name="form[]" id="states">
+                                            <option value="#" selected hidden>Selects</option>
+                                            <option value="#">Значення 1</option>
+                                            <option value="#">Значення 2</option>
+                                            <option value="#">Значення 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__number">
+                                        <label for="number">
+                                            Zip Code
+                                        </label>
+                                        <input required id="number" type="number"
+                                            name="form[]" class="form__number"
+                                            placeholder="Zip Code">
+                                    </div>
+                                </div>
+                                <div class="form__line-phone">
+                                    <div class="form__email">
+                                        <label for="mail">Email</label>
+                                        <input type="email" required id="mail" placeholder="Email Address">
+                                    </div>
+                                    <div class="form__phone">
+                                        <label for="phone">Phone</label>
+                                        <input type="tel" required id="phone" placeholder="Phone number">
+                                    </div>
+                                </div>
+                                <div class="form__line-check">
+                                    <input class="form__input-check" type="checkbox" name="form[]" id="checkbox">
+                                    <label class="form__label-check" for="checkbox">
+                                        Ship to a different address
+                                    </label>
+                                    
+                                </div>
+                                <div class="form__decor-line"></div>
+                                <div class="form__about">
+                                    <h2 class="form__title">Additional Info</h2>
+                                    <label for="textarea">Order Notes (Optional)</label>
+                                    <textarea class="form__textarea" name="form[]" id="textarea" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                                </div>
+                            </div>
+                            <div class="form__inner-other">
+                                <div class="form__basket basket">
+                                    <h2 class="basket__title">Order Summery</h2>
+                                    <div class="basket__item">
+                                        <a href="#" class="basket__product product">
+                                            <img src="img/image.webp" alt="зелений перець" class="product__img">
+                                            <h3>Green Capsicum</h3>
+                                            <span>x5</span>
+                                        </a>
+                                        <span class="basket__price">$70.00</span>
+                                    </div>
+                                    <div class="basket__item basket__item--mg">
+                                        <a href="#" class="basket__product product">
+                                            <img src="img/image1.webp" alt="червоний перець" class="product__img">
+                                            <h3>Red Capsicum</h3>
+                                            <span>x1</span>
+                                        </a>
+                                        <span class="basket__price">$14.00</span>
+                                    </div>
+                                    <div class="basket__suma">
+                                        <p>Subtotal:</p>
+                                        <span>$84.00</span>
+                                    </div>
+                                    <div class="basket__shipping">
+                                        <p>Shipping:</p>
+                                        <span>Free</span>
+                                    </div>
+                                    <div class="basket__total">
+                                        <p>Total:</p>
+                                        <span>$84.00</span>
+                                    </div>
+                                    <div class="basket__order">
+                                        <h2 class="basket__title basket__title--mgb">Payment Method</h2>
+                                        <div class="basket__radio-box">
+                                            <input value="1" class="basket__radio" type="radio" checked id="grup1" name="grup">
+                                            <label class="basket__grup-name" for="grup1">Cash on Delivery</label>
+                                        </div>
+                                        <div class="basket__radio-box">
+                                            <input value="2" class="basket__radio" type="radio" id="grup2" name="grup">
+                                            <label class="basket__grup-name" for="grup2">Paypal</label>
+                                        </div>
+                                        <div class="basket__radio-box">
+                                            <input disabled value="3" class="basket__radio" type="radio" id="grup3" name="grup">
+                                            <label class="basket__grup-name basket__grup-name--color" for="grup3">Amazon Pay</label>
+                                        </div>
+                                        <button type="submit" class="basket__btn">Place Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <p>footer</p>
+                <!-- контент підвалу -->
+            </footer>
+        </div>
+    </body>
+</html>
