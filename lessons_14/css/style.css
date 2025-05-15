@@ -226,7 +226,7 @@ input:not(.form__input-check, .basket__radio):hover {
 
 .form__textarea:hover {
     outline: 1px solid #808080;
-    transition: all 0.3s;
+    transition: opacity 0.3s;
 }
 
 .form__textarea:focus::placeholder {
