@@ -103,9 +103,10 @@ body {
 }
 
 .banner {
-    padding: 47px 0 141px 0;
-    background: url(../img/main-fon.webp)center no-repeat;
-    background-position: 50% 90%;
+    padding: 47px 0 150px 0;
+    background: url(../img/main-fon.webp) no-repeat;
+    background-position: 50% 65%;
+    background-size: cover;
     color: #FFF;
 }
 
