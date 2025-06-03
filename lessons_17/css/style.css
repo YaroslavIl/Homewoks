@@ -133,7 +133,7 @@ body {
 .flowers__big-block {
     display: grid;
     gap: 40px 30px;
-    grid-template-columns: repeat(2, minmax(250px, 369));
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
     grid-template-rows: 257px 446px 446px;
     flex-basis: 63%;
 }
