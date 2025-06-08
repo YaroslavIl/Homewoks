@@ -1,0 +1,301 @@
+/* Скидання стилів */
+@import url(reset.css);
+
+/* Google Fonts (Plugin) */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* завантажені шрифти */
+@import url(fonts.css);
+
+:root {
+    --header-height: 4.25rem;
+    --main-color: #333;
+    --some-color: #00B207;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: var(--main-color);
+    font-size: 0.875rem;
+    /* 14px */
+
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+    max-width: 76.875rem;
+    margin: 0 auto;
+    padding: 0 1.25rem 0 1.25rem;
+}
+
+
+.header {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0.875rem 0;
+    background-color: #00B207;
+    min-height: var(--header-height);
+}
+
+.footer {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 3.125rem 0;
+    background-color: #00B207;
+}
+
+.link-up {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    z-index: 2;
+    border-radius: 50%;
+    background-color: #0ef90655;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__img {
+    background: url('../img/fon.webp')50% 100% / cover no-repeat;
+    min-height: calc(100svh - var(--header-height));
+}
+
+.hero {
+    scroll-margin-top: 5rem;
+}
+
+.hero__content {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.hero__title {
+    font-size: 4em;
+    line-height: 1.5;
+
+}
+
+.hero__content p {
+    font-size: 1.25em;
+    line-height: 1.5;
+    max-width: 50rem;
+    mix-blend-mode: overlay;
+}
+
+.hero__content a {
+    font-size: 1.5em;
+    pointer-events: none;
+}
+
+.test {
+    padding: 1.25rem;
+    display: flex;
+}
+
+.test__block {
+    height: clamp(18.75rem, -7.5rem + 60vw, 37.5rem);
+    /* 600>300 1200>700 */
+    background-color: var(--some-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.test__block p {
+    flex-basis: 80%;
+    font-size: clamp(0.938rem, -0.179rem + 3.57vw, 2.5rem);
+    /*40>15 1200>500*/
+}
+
+.test__vertical {
+    writing-mode: vertical-rl;
+    font-size: 1.5rem;
+}
+
+.test__vertical--upright {
+    text-orientation: upright;
+}
+
+.cursor {
+    padding: 2.5rem 0;
+}
+
+.cursor__box>* {
+    background-color: var(--some-color);
+    border: 1px solid #000;
+    min-height: 6.25rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cursor__box {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(12.5rem, 100%), 1fr));
+}
+
+.cursor__box div:nth-child(1) {
+    cursor: none;
+}
+
+.cursor__box div:nth-child(2) {
+    cursor: wait;
+}
+
+.cursor__box div:nth-child(3) {
+    cursor: not-allowed;
+}
+
+.cursor__box div:nth-child(4) {
+    cursor: grab;
+}
+
+.cursor__box div:nth-child(5) {
+    cursor: zoom-in;
+}
+
+.mix__text-box {
+    container-type: inline-size;
+    text-align: center;
+}
+
+.mix__title {
+    font-size: 10rem;
+}
+
+.img {
+    display: inline-block;
+    width: 18.75rem;
+    height: 18.75rem;
+    background-color: var(--some-color);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.mix__img3 {
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    transform: translate(-152%, -50%);
+}
+
+.mix {
+    padding: 1.25rem 0;
+}
+
+/* ========================media======================== */
+@container (max-width: 50em) {
+    .mix__title {
+        font-size: 5rem;
+    }
+}
+
+/* Якщо курсор є  */
+@media (any-hover: hover),
+(pointer: fine) {
+    .cursor__box>*:hover {
+        background-color: #00b20668;
+    }
+
+    .mix__img3 {
+        animation-name: up;
+        animation-duration: 6s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes up {
+        0% {
+            transform: translate(-152%, -50%);
+        }
+
+        20% {
+            transform: translate(-152%, 0%);
+        }
+
+        80% {
+            transform: translate(-152%, 0%);
+        }
+
+        100% {
+            transform: translate(-152%, -50%);
+        }
+    }
+
+    .mix__img2 {
+        animation: right 6s ease infinite;
+    }
+
+    @keyframes right {
+
+        0%,
+        20% {
+            transform: translateX(0%);
+        }
+
+        30% {
+            transform: translateX(100%);
+        }
+
+        80%,
+        100% {
+            transform: translateX(0%);
+        }
+    }
+}
+
+/* Якщо курсору немає  */
+@media (any-hover: none),
+(pointer: coarse) {
+    .link-up {
+        display: none;
+    }
+}
+
+/* ----------------------- */
+
+
+@media (max-width: 75em) {
+    .hero__content {
+        font-size: 0.625rem;
+    }
+}
+
+@media (max-width: 814px) {
+    /*  */
+}
+
+@media (max-width: 650px) {
+    /*  */
+}
+
+@media (max-width: 500px) {
+    /*  */
+}
+
+@media (max-width: 449.8px) {
+    /*  */
+}
